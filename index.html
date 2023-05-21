@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn3.emoji.gg/emojis/2892-keyboard.png" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Keylogger</title>
+    <meta name="description" content="Quickly visualize keyboard event info" />
+  </head>
+  <body>
+    <main>
+      <h1>Keylogger</h1>
+      <h2>Press any key!</h2>
+      <input type="text" autofocus />
+      <section id="properties">
+        <h3>Main Properties</h3>
+        <div>
+          <div class="group"><span class="label">code</span><span class="prop" id="code"></span></div>
+          <div class="group"><span class="label">key</span><span class="prop" id="key"></span></div>
+        </div>
+      </section>
+      <section id="modifiers">
+        <h3>Modifier Keys</h3>
+        <div>
+          <div class="group">
+            <span class="label">ctrlKey</span><span class="prop" data-active="false" id="ctrlKey"></span>
+          </div>
+          <div class="group">
+            <span class="label">shiftKey</span><span class="prop" data-active="false" id="shiftKey"></span>
+          </div>
+          <div class="group">
+            <span class="label">altKey</span><span class="prop" data-active="false" id="altKey"></span>
+          </div>
+          <div class="group">
+            <span class="label">metaKey</span><span class="prop" data-active="false" id="metaKey"></span>
+          </div>
+        </div>
+      </section>
+      <section id="deprecated">
+        <h3>Deprecated Properties</h3>
+        <div>
+          <div class="group"><span class="label">charCode</span><span class="prop" id="charCode"></span></div>
+          <div class="group"><span class="label">keyCode</span><span class="prop" id="keyCode"></span></div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
